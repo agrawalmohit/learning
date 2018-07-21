@@ -1,12 +1,12 @@
-package com.ssp.as.impl;
+package com.sample.as.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ssp.as.app.CacheBuilder;
-import com.ssp.as.dto.FlightsDto;
-import com.ssp.as.enums.FlightPreferenceEnum;
-import com.ssp.as.intf.AirlineSearchIntf;
+import com.sample.as.app.CacheBuilder;
+import com.sample.as.dto.FlightsDto;
+import com.sample.as.enums.FlightPreferenceEnum;
+import com.sample.as.intf.AirlineSearchIntf;
 
 public class AirlineSearchImpl implements AirlineSearchIntf {
 

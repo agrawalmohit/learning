@@ -1,10 +1,10 @@
-package com.ssp.as.enums;
+package com.sample.as.enums;
 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.ssp.as.dto.FlightsDto;
+import com.sample.as.dto.FlightsDto;
 
 public enum FlightPreferenceEnum {
 

@@ -1,10 +1,10 @@
-package com.ssp.as.app;
+package com.sample.as.app;
 
 import java.util.List;
 
-import com.ssp.as.dto.FlightsDto;
-import com.ssp.as.impl.AirlineSearchImpl;
-import com.ssp.as.intf.AirlineSearchIntf;
+import com.sample.as.dto.FlightsDto;
+import com.sample.as.impl.AirlineSearchImpl;
+import com.sample.as.intf.AirlineSearchIntf;
 
 public class TestFlightSearch {
 

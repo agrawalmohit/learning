@@ -1,8 +1,8 @@
-package com.ssp.as.intf;
+package com.sample.as.intf;
 
 import java.util.List;
 
-import com.ssp.as.dto.FlightsDto;
+import com.sample.as.dto.FlightsDto;
 
 public interface AirlineSearchIntf {
 	

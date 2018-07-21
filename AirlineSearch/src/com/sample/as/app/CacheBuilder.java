@@ -1,4 +1,4 @@
-package com.ssp.as.app;
+package com.sample.as.app;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ssp.as.dto.FlightsDto;
+import com.sample.as.dto.FlightsDto;
 
 public class CacheBuilder {
 	public static List<FlightsDto> flightsCacheList = new ArrayList<FlightsDto>();

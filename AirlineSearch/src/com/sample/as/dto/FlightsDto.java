@@ -1,4 +1,4 @@
-package com.ssp.as.dto;
+package com.sample.as.dto;
 
 public class FlightsDto {
 
