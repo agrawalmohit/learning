@@ -16,14 +16,16 @@ public enum FlightPreferenceEnum {
 
 				@Override
 				public int compare(FlightsDto object1, FlightsDto object2) {
-					if (object1.getFlightTime() < object2.getFlightTime()) {
+					return object1.getFlightTime() - object2.getFlightTime();
+					//bad logic below
+					/*if (object1.getFlightTime() < object2.getFlightTime()) {
 						return -1;
 					} else if (object1.getFlightTime() == object2
 							.getFlightTime()) {
 						return 0;
 					} else {
 						return 1;
-					}
+					}*/
 				}
 			});
 			return flightsList;
@@ -38,13 +40,15 @@ public enum FlightPreferenceEnum {
 
 				@Override
 				public int compare(FlightsDto object1, FlightsDto object2) {
-					if (object1.getFlightDur() < object2.getFlightDur()) {
+					return object1.getFlightDur() - object2.getFlightDur();
+					//bad logic below
+					/*if (object1.getFlightDur() < object2.getFlightDur()) {
 						return -1;
 					} else if (object1.getFlightDur() == object2.getFlightDur()) {
 						return 0;
 					} else {
 						return 1;
-					}
+					}*/
 				}
 			});
 			return flightsList;
