@@ -14,8 +14,9 @@ public class CustomizeContainerConfiguration implements WebServerFactoryCustomiz
 
 	@Override
 	public void customize(ConfigurableWebServerFactory factory) {
+		// port 8181 is loaded with the help of EnvironmentPostProcessorExample before
+		// the context is refreshed
 		factory.setPort(Integer.parseInt(env.getProperty("spring.server.port")));
-
 	}
 
 }

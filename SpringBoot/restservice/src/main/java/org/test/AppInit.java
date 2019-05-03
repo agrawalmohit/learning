@@ -3,12 +3,14 @@ package org.test;
 import java.util.Arrays;
 import java.util.Collections;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
 
 /**
  * {@link SpringBootApplication} is a convenience annotation that adds all of
@@ -27,11 +29,26 @@ import org.springframework.context.annotation.Bean;
  */
 @SpringBootApplication
 public class AppInit {
+	
 
+	/**
+	 * The main method. This is just a standard method that follows the Java
+	 * convention for an application entry point. Our main method delegates to
+	 * Spring Boot’s SpringApplication class by calling run. SpringApplication
+	 * bootstraps our application, starting Spring, which, in turn, starts the
+	 * auto-configured Tomcat web server. We need to pass {@link AppInit}.class as
+	 * an argument to the run method to tell SpringApplication which is the primary
+	 * Spring component. The args array is also passed through to expose any
+	 * command-line arguments.<br/>
+	 * <br/>
+	 * Use {@code 'mvn spring-boot:run'} from the root project directory to start
+	 * application
+	 * 
+	 * @param args
+	 *            the arguments
+	 */
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(AppInit.class);
-		//app.setDefaultProperties(Collections.singletonMap("server.port", port));
-		app.run(args);
+		SpringApplication.run(AppInit.class, args);
 	}
 
 	/**
@@ -53,11 +70,4 @@ public class AppInit {
 			}
 		};
 	}
-
-	/*@Value("${spring.server.port}")
-	public void setServerPort(String serverPort) {
-		System.out.println("************************************************************");
-		System.out.println(serverPort);
-		AppInit.port = serverPort;
-	}*/
 }

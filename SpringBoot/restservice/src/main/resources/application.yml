@@ -1,8 +1,9 @@
-spring:
-   application:
-      name: restservice
-   server:
-      port: 8686
+comment: >
+   spring:
+      application:
+         name: restservice
+      server:
+         port: 8686
 management:
    endpoints:
       shutdown:

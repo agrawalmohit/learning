@@ -1,0 +1,9 @@
+custom:
+   config:
+      database:
+         user: test
+         password: test
+         url: host:port
+spring:
+   server:
+      port: 8181
