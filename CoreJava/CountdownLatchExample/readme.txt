@@ -1,0 +1,3 @@
+#Benefit of CountDownLatch over join
+1. after join(), thread can be unblocked only when joined thread has finished its execution while in CountDownLatch a thread can decrease the count anytime either on completion of thread or in between based on any condition.
+2. More parallelism in countdownlatch than join. CountdownLatch is task-oriented. As soon as the task is completed it can inform the main awaiting thread through countdown. we do not need to have the reference to the thread.
