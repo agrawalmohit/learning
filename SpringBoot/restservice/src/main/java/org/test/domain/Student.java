@@ -42,4 +42,9 @@ public class Student {
 		return this.getId() == ((Student) obj).getId();
 	}
 
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", section=" + section + "]";
+	}
+
 }
